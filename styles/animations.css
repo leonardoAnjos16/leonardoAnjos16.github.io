@@ -32,6 +32,7 @@
     animation-name: appear-up;
     animation-duration: 300ms;
     animation-fill-mode: backwards;
+    animation-delay: 1400ms;
 }
 
 #links a:hover {
