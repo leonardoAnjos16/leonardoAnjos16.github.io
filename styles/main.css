@@ -26,13 +26,13 @@ body {
 #name {
     color: white;
     text-align: center;
-    font-size: clamp(4rem, 4vw, 6rem);
+    font-size: clamp(3.6rem, 4vw, 6rem);
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
 }
 
 #links {
-    width: clamp(20rem, 40vw, 25rem);
+    width: clamp(24rem, 32vw, 30rem);
     margin-top: 1rem;
 
     display: flex;

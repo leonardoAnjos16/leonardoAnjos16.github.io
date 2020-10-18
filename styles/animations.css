@@ -1,0 +1,41 @@
+@keyframes appear-up {
+    from {
+        opacity: 0;
+        transform: translateY(1.6rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-0.1rem);
+    }
+
+    20%, 80% {
+        transform: translateX(0.2rem);
+    }
+
+    30%, 50%, 70% {
+        transform: translateX(-0.4rem);
+    }
+
+    40%, 60% {
+        transform: translateX(0.4rem);
+    }
+}
+
+.appear-up {
+    animation-name: appear-up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}
+
+#links a:hover {
+    animation-name: shake;
+    animation-duration: 800ms;
+    animation-fill-mode: backwards;
+}
