@@ -1,0 +1,17 @@
+@keyframes appear-up {
+    from {
+        opacity: 0;
+        transform: translateY(1.6rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.appear-up {
+    animation-name: appear-up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+}

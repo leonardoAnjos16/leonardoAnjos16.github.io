@@ -2,23 +2,27 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Leonardo Anjos</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animations.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap">
     </head>
     <body>
-        <div id="page">
-            <div id="sidebar">
-                <img id="profile-picture" src="./profile_picture.jpg" alt="profile picture">
-                <div id="basic-info">
-                    <h1 id="name">Leonardo Anjos</h1>
-                    <h5 id="description">Computer Science student at UFPE</h5>
-                </div>
-                <div id="contact-info">
-                    <a class="link" href="mailto:las4@cin.ufpe.br">las4@cin.ufpe.br</a>
-                    <a class="link" href="tel:+5581999305130">(81) 99930-5130</a>
-                </div>
-            </div>
-            <div id="main">
+        <div id="content">
+            <h1 id="name" class="appear-up">Leonardo Anjos</h1>
+            <div id="links" class="appear-up">
+                <a title="E-mail" href="mailto:las4@cin.ufpe.br">
+                    <img src="./images/email.svg" alt="E-mail">
+                </a>
+                <a title="GitHub" href="https://github.com/leonardoAnjos16">
+                    <img src="./images/github.svg" alt="GitHub">
+                </a>
+                <a title="Phone" href="tel:+5581999305130">
+                    <img src="./images/phone.svg" alt="Phone">
+                </a>
             </div>
         </div>
     </body>
