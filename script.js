@@ -1,11 +1,14 @@
-const nameElement = document.querySelector('#name');
-const name = nameElement.innerHTML;
+document.querySelectorAll('.typewriter').forEach(elem => {
+    const text = elem.innerHTML;
 
-const typewriterAnimation = (index = 0) => {
-    if (index >= name.length) return;
-    nameElement.innerHTML += name[index];
-    setTimeout(() => { typewriterAnimation(index + 1); }, 100);
-};
+    let index = 0;
+    elem.innerHTML = '';
 
-nameElement.innerHTML = '';
-typewriterAnimation();
+    const animate = () => {
+        if (index >= text.length) return;
+        elem.innerHTML += text[index++];
+        setTimeout(animate, 100);
+    };
+
+    animate();
+});
