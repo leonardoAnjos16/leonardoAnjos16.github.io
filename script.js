@@ -1,8 +1,6 @@
 document.querySelectorAll('.typewriter').forEach(elem => {
-    const text = elem.innerHTML;
-
     let index = 0;
-    elem.innerHTML = '';
+    const { text } = elem.dataset;
 
     const animate = () => {
         if (index >= text.length) return;
